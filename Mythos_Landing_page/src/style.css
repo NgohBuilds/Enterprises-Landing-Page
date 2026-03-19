@@ -11,6 +11,9 @@ html{
     margin: 0;
     padding:0;
 }
+header , section , footer{
+        padding-inline: 5%;
+}
 h1{
      font-size: var(--ft_main_h1);
     
@@ -28,11 +31,76 @@ button{
     text-align: center;
     font-weight: bold;
 }
-header{
+header .header_container{
     display: flex;
-    
-
+    justify-content: space-between;
+    align-items: center;
+    height: clamp(44px, calc(32.732px + 3.005vw), 76px);
 }
+ul{
+    list-style-type: none ;
+}
+ul li a{
+    text-decoration: none;
+    color:var(--white);
+}
+nav ul li a{
+    margin-inline: 10px;
+    font-size: initial;
+    
+} 
+nav ul {
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+}
+
+main{
+    margin-inline: auto;
+}
+
+
+
 #main_section , header{
     background-color: var(--fs_bg);
+    
+}
+#main_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+#main_section>:first-child{
+    
+    text-align: initial;
+}
+#main_section p , #main_section h1{
+    color: var(--white);
+    text-wrap: balance;
+}
+#main_section img{
+    width: 40.5%;
+    object-fit: contain;
+}
+.button_set{
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-wrap: nowrap;
+}
+.button_set button:first-child{
+    background-color: var(--fs_btn_bg);
+    color: var(--fs_btn_content_color);
+    margin-right: 5%;
+}
+.button_set>*:nth-last-child(1){
+    border: 1px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+
+}
+section{
+    height: 100vh;
+    text-align: center;
+    padding-inline: auto;
 }
