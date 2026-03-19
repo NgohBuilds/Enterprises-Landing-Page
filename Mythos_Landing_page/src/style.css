@@ -1,0 +1,38 @@
+@import url(./global.css);
+
+html{
+    font-size: var(--ft_s);
+}
+/*Reset CSS*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+h1{
+     font-size: var(--ft_main_h1);
+    
+}
+h2{
+    font-size: var(--ft_s_h2 );
+}
+h1,h2{
+     color: var(--white);
+}
+button{
+    border:1px solid transparent;
+    padding: calc((130px - 98px)/2) calc((42px - 18px/2)) ;
+    border-radius: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    
+
+}
+#main_section , header{
+    background-color: var(--fs_bg);
+}

@@ -1,0 +1,20 @@
+
+:root{
+    /*Color Palette*/
+    --white : white;
+    --fs_bg : #495BCF;
+    --fs_btn_bg :#00D3D4 ;
+    --fs_btn_content_color :#383A4A;
+    --snds_bg:#BF1085;
+    --CTA_bg:linear-gradient(to right , #3B384A ,#495BCF,#00D3D4 );
+    
+    /*Sizing*/
+    --ft_s:18px ;
+    --ft_main_h1: clamp(2.625rem, 1.965rem + 2.817vi, 4.5rem);
+    --ft_s_h2 : 24px;
+    --ft_s_purpleS:clamp(2.25rem, 1.986rem + 1.127vi, 3rem);
+    --ft_s_testimony_p:clamp(1.5rem, 1.236rem + 1.127vi, 2.25rem);
+    --ft_s_autor: clamp(1.25rem, 1.162rem + 0.376vi, 1.5rem);
+    --ft_s_testimony_title:clamp(2.25rem, 2.118rem + 0.563vi, 2.625rem);
+    --ft_s_testimony_p:clamp(1.5rem, 1.412rem + 0.376vi, 1.75rem);
+}
