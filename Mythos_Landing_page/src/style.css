@@ -144,4 +144,16 @@ section{
     align-self: center;
 
 }
+
+}
+#CTA_s{
+    padding: 2rem;
+    background-image: var(--CTA_bg);
+    height: fit-content;
+    line-height: 3rem;
+    color: var(--white);
+    h1{
+        font-size: var(--ft_s_h2);
+    }
+
 }
