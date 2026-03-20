@@ -104,3 +104,44 @@ section{
     text-align: center;
     padding-inline: auto;
 }
+
+
+
+#services{
+    height: initial;
+    padding-block: max(2.5rem , 5vh );
+}
+.grid_container{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,  calc(100% /3 - 80px)));
+    grid-template-rows: 1fr;
+    gap: 80px;
+}
+.grid_container .card{
+    font-size: 18px;
+    text-align: initial;
+    h1{
+        margin-block: .5rem;
+        font-size: 24px;
+        color: initial;
+        text-wrap: balance;
+
+    }
+    
+}
+#purple{
+    background-color: var(--snds_bg);
+    color: var(--white);
+    h1{
+        font-size: var(--ft_s_purpleS);
+    }
+    #purple_s_content{
+    width: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+}
