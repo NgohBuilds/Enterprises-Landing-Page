@@ -157,3 +157,46 @@ section{
     }
 
 }
+.testimony{
+    margin-inline: auto;
+    max-width: 790px;
+    width: 90%;
+    text-align: left;
+    font-size: var(--ft_s_testimony_p);
+    font-weight: bold;
+}
+.testimony .avatar {
+    display: flex;
+    max-width: 449px;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    .description_avatar{
+            font-size: var(--ft_s_autor);
+            font-weight: normal;
+            text-align: center;
+
+
+    }
+}
+@media screen and (min-width:768px){
+    .testimony .avatar {
+    flex-flow: row nowrap;
+    align-items: center;
+}
+     .testimony .avatar .description_avatar{
+            font-size: var(--ft_s_autor);
+            font-weight: normal;
+            text-align: left;
+            text-wrap: balance;
+            margin-left: 2ch ;
+
+           
+
+    }
+}
+.testimony .avatar img{
+
+    clip-path: circle(50%);
+
+}
