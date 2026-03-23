@@ -63,16 +63,25 @@ main{
 
 #main_section , header{
     background-color: var(--fs_bg);
-    
 }
+
 #main_section{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     gap: 10%;
 }
+@media  screen and (min-width:728px) {
+    #main_section{
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+}
 #main_section>:first-child{
-    
     text-align: initial;
 }
 #main_section p , #main_section h1{
@@ -131,6 +140,7 @@ section{
     
 }
 #purple{
+    padding: 5%;
     background-color: var(--snds_bg);
     color: var(--white);
     h1{
@@ -142,28 +152,43 @@ section{
     display: flex;
     flex-direction: column;
     align-self: center;
+    margin-inline: auto;
+    }
+
+    img{
+        object-fit: cover;
+        object-position: center;
+        width:clamp(325px,30%,792px ) ;
+        height: clamp(300px,30%,465px);
+    }
 
 }
 
-}
+
 #CTA_s{
     padding: 2rem;
     background-image: var(--CTA_bg);
     height: fit-content;
-    line-height: 3rem;
     color: var(--white);
     h1{
         font-size: var(--ft_s_h2);
     }
 
 }
+#CTA_s>*{
+    margin-block: 5%;
+}
 .testimony{
     margin-inline: auto;
+    padding-block: 5%;
     max-width: 790px;
     width: 90%;
     text-align: left;
     font-size: var(--ft_s_testimony_p);
     font-weight: bold;
+}
+.testimony>*{
+    margin-block: 5%;
 }
 .testimony .avatar {
     display: flex;
@@ -199,4 +224,26 @@ section{
 
     clip-path: circle(50%);
 
+}
+
+footer {
+    padding-block: 5%;
+}
+footer >*{
+    margin-inline: auto;
+   
+}
+footer .footer_columns_Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(calc(375px / 2),1fr));
+    gap: clamp(.5rem, 5% , .75rem);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+footer .footer_columns_Container a{
+    margin-block:.6rem;
+    color: #000;
+}
+footer span{
+    font-weight: bold;
 }
