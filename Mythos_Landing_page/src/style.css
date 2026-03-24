@@ -91,6 +91,7 @@ main{
 #main_section img{
     width: 40.5%;
     object-fit: contain;
+    mask-image: url(../assets/icon-asterisk.png);
 }
 .button_set{
     display: inline-block;
@@ -111,7 +112,6 @@ main{
 section{
     height: 100vh;
     text-align: center;
-    padding-inline: auto;
 }
 
 
@@ -143,28 +143,32 @@ section{
     padding: 5%;
     background-color: var(--snds_bg);
     color: var(--white);
-    h1{
+    height: fit-content;
+
+}
+
+#purple h1{
         font-size: var(--ft_s_purpleS);
     }
-    #purple_s_content{
+#purple_S_content{
     width: fit-content;
     background-color: transparent;
     display: flex;
+    gap: var(--ft_s_autor);
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-wrap: balance;
     margin-inline: auto;
-    }
+}
 
-    img{
+#purple_S_content img{
         object-fit: cover;
         object-position: center;
         width:clamp(325px,30%,792px ) ;
         height: clamp(300px,30%,465px);
     }
-
-}
-
-
+    
 #CTA_s{
     padding: 2rem;
     background-image: var(--CTA_bg);
@@ -177,6 +181,9 @@ section{
 }
 #CTA_s>*{
     margin-block: 5%;
+}
+#testimony_section{
+    height: fit-content;
 }
 .testimony{
     margin-inline: auto;
