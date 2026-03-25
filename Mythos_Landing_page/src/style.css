@@ -2,6 +2,7 @@
 
 html{
     font-size: var(--ft_s);
+    font-family: var(--ff);
 }
 /*Reset CSS*/
 *,
@@ -24,12 +25,23 @@ h2{
 h1,h2{
      color: var(--white);
 }
+a{
+    transition: 5ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+a:hover{
+    opacity:.7;
+}
 button{
     border:1px solid transparent;
     padding: calc((130px - 98px)/2) calc((42px - 18px/2)) ;
     border-radius: 2.5rem;
     text-align: center;
     font-weight: bold;
+    transition: 3ms linear ;
+}
+button:hover{
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%);
+  color: var(--white);
 }
 header .header_container{
     display: flex;
@@ -72,15 +84,7 @@ main{
     align-items: center;
     gap: 10%;
 }
-@media  screen and (min-width:728px) {
-    #main_section{
 
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-}
 #main_section>:first-child{
     text-align: initial;
 }
@@ -126,6 +130,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(300px ,  calc(100% /3 - 80px)));
     grid-template-rows: 1fr;
     gap: 80px;
+    place-content: center;
 }
 .grid_container .card{
     font-size: 18px;
@@ -211,22 +216,7 @@ section{
 
     }
 }
-@media screen and (min-width:768px){
-    .testimony .avatar {
-    flex-flow: row nowrap;
-    align-items: center;
-}
-     .testimony .avatar .description_avatar{
-            font-size: var(--ft_s_autor);
-            font-weight: normal;
-            text-align: left;
-            text-wrap: balance;
-            margin-left: 2ch ;
 
-           
-
-    }
-}
 .testimony .avatar img{
 
     clip-path: circle(50%);
@@ -253,4 +243,28 @@ footer .footer_columns_Container a{
 }
 footer span{
     font-weight: bold;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width:768px){
+    .testimony .avatar {
+    flex-flow: row nowrap;
+    align-items: center;
+}
+     .testimony .avatar .description_avatar{
+            font-size: var(--ft_s_autor);
+            font-weight: normal;
+            text-align: left;
+            text-wrap: balance;
+            margin-left: 2ch ;
+    }
+   
+
+    #main_section{
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
 }
